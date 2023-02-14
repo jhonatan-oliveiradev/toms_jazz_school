@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Roboto", sans-serif;
+	font-family: Roboto, sans-serif;
 }
 
 :root {
@@ -34,6 +34,7 @@ body {
 	padding: 0 1rem;
 }
 
+/* utils */
 .mt-1 {
 	margin-top: 1rem;
 }
@@ -77,6 +78,7 @@ header img {
 header nav {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	margin: 1rem auto 0;
 }
 
 nav a {
@@ -84,10 +86,15 @@ nav a {
 	font-size: 1.25rem;
 	padding: 0.5rem;
 	text-decoration: none;
+	transition: all 0.2s ease-in-out;
 }
 
 header nav a:nth-child(2n-1) {
 	text-align: right;
+}
+
+header nav a:hover {
+	color: var(--orange-500);
 }
 
 .button {
@@ -160,4 +167,126 @@ h2 {
 	top: -0.75rem;
 	height: 36px;
 	width: 40px;
+}
+
+.courses-section {
+	padding-bottom: 8rem;
+}
+
+.cards {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 1.25rem;
+	margin-top: -8rem;
+	margin-bottom: 4rem;
+}
+
+.card {
+	background-color: var(--orange-500);
+	border: 2px solid var(--black-900);
+	box-shadow: 4px 4px 0 var(--black-900);
+	max-width: 17rem;
+	padding: 2rem 0 0 2rem;
+}
+
+.card:nth-child(2n) {
+	align-self: end;
+	background-color: var(--orange-400);
+}
+
+.card strong {
+	display: block;
+	font-size: 1.5rem;
+	margin: 1rem 0;
+}
+
+.card a {
+	display: block;
+	margin: 3rem 0 0 auto;
+	width: fit-content;
+	transition: all 0.2s ease-in-out;
+}
+
+.card a:hover {
+	transform: translateX(0.5rem);
+}
+
+/* footer */
+
+footer {
+	border-bottom: 0;
+	padding: 1rem 1.25rem 4rem;
+}
+
+footer nav a {
+	display: block;
+	padding-left: 0;
+	transition: all 0.2s ease-in-out;
+}
+
+footer nav a:hover {
+	color: var(--orange-500);
+}
+
+.newsletter-form label {
+	display: block;
+	font-size: 1.5rem;
+}
+
+.newsletter-form input {
+	border: 2px solid var(--black-900);
+	box-shadow: 4px 4px 0 var(--black-900);
+	font-size: 1.5rem;
+	font-weight: 700;
+	padding: 0.5rem;
+	width: 100%;
+	outline: none;
+}
+
+.newsletter-form button {
+	cursor: pointer;
+}
+
+.copy {
+	font-size: 0.75rem;
+	text-align: center;
+}
+
+/* responsive */
+@media screen and (min-width: 40rem) {
+	header nav {
+		display: block;
+		text-align: center;
+	}
+
+	.cards {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.card:nth-child(2n) {
+		margin-top: 1rem;
+	}
+}
+
+@media screen and (min-width: 48rem) {
+	header div {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	header img,
+	header nav,
+	header .button {
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 72rem) {
+	.container {
+		display: flex;
+	}
 }
