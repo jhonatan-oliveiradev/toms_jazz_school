@@ -60,6 +60,10 @@ body {
 	color: var(--orange-500);
 }
 
+.text-center {
+	text-align: center;
+}
+
 header,
 .hero-section,
 .courses-section,
@@ -285,8 +289,43 @@ footer nav a:hover {
 	}
 }
 
-@media screen and (max-width: 72rem) {
+@media screen and (min-width: 72rem) {
+	h1,
+	h2 {
+		font-size: 4rem;
+	}
+
 	.container {
 		display: flex;
+		align-items: center;
+		margin: 0 auto;
+		max-width: 72rem;
+	}
+
+	.container.row-reverse {
+		flex-direction: row-reverse;
+	}
+
+	.about-column {
+		flex: 2;
+	}
+
+	.about-column p {
+		font=size: 1.25rem;
+		max-width: 16rem;
+	}
+
+	footer nav {
+		flex: 1;
+	}
+
+	.newsletter-form {
+		flex: 3;
+	}
+}
+
+@media screen and (min-width: 80rem) {
+	.container {
+		max-width: 80rem;
 	}
 }

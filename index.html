@@ -20,7 +20,7 @@
 	</head>
 	<body>
 		<header>
-			<div>
+			<div class="container">
 				<img src="./assets/img/logo.svg" alt="Tom's Jazz School" />
 				<nav>
 					<a href="#">Início</a>
@@ -33,7 +33,7 @@
 		</header>
 		<main>
 			<section class="hero-section">
-				<div class="container">
+				<div class="container row-reverse">
 					<img src="./assets/img/hero-img.svg" alt="Banda de jazz tocando" />
 					<div>
 						<h1 class="mt-2">
@@ -108,7 +108,7 @@
 						</a>
 					</article>
 				</div>
-				<h2 class="text-center">
+				<h2 class="text-center mt-2">
 					E <span class="text-primary">vários</span> outros!
 				</h2>
 				<a href="#" class="button mt-2 mx-auto">Conhecer cursos</a>
@@ -116,37 +116,39 @@
 		</main>
 
 		<footer>
-			<div>
-				<img
-					src="./assets/img/logo.svg"
-					alt="Tom's Jazz School"
-					class="mt-1 mb-1"
-				/>
-				<p class="mb-2">
-					Tom era um músico de jazz talentoso, que sonhava em abrir sua própria
-					escola de jazz. Ele queria ensinar às pessoas sua paixão por essa
-					forma de arte, e assim, Tom's Jazz School foi criada.
-				</p>
+			<div class="container">
+				<div class="about-column">
+					<img
+						src="./assets/img/logo.svg"
+						alt="Tom's Jazz School"
+						class="mt-1 mb-1"
+					/>
+					<p class="mb-2">
+						Tom era um músico de jazz talentoso, que sonhava em abrir sua
+						própria escola de jazz. Ele queria ensinar às pessoas sua paixão por
+						essa forma de arte, e assim, Tom's Jazz School foi criada.
+					</p>
+				</div>
+				<nav class="mb-1">
+					<a href="#">Início</a>
+					<a href="#">Cursos</a>
+					<a href="#">Eventos</a>
+					<a href="#">Contato</a>
+				</nav>
+				<form class="newsletter-form">
+					<label for="email" class="mb-1"
+						>Receba materiais gratuitos no seu e-mail</label
+					>
+					<input
+						class="mb-1"
+						type="email"
+						name="email"
+						id="email"
+						placeholder="Digite seu e-mail"
+					/>
+					<button type="submit" class="button mb-2">Quero receber</button>
+				</form>
 			</div>
-			<nav class="mb-1">
-				<a href="#">Início</a>
-				<a href="#">Cursos</a>
-				<a href="#">Eventos</a>
-				<a href="#">Contato</a>
-			</nav>
-			<form class="newsletter-form">
-				<label for="email" class="mb-1"
-					>Receba materiais gratuitos no seu e-mail</label
-				>
-				<input
-					class="mb-1"
-					type="email"
-					name="email"
-					id="email"
-					placeholder="Digite seu e-mail"
-				/>
-				<button type="submit" class="button mb-2">Quero receber</button>
-			</form>
 			<p class="copy">
 				Tom's Jazz School © 2023 - Todos os direitos reservados
 			</p>
