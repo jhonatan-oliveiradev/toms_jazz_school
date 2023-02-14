@@ -59,7 +59,7 @@ $ cd toms_jazz_school
 
 # 🚧 Project:
 
-### [Live project!](https://) 🚀
+### [Live project!](https://toms-jazz-school.vercel.app/) 🚀
 
 # 🎨 Inspiration:
 
